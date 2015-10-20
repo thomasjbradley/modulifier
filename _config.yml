@@ -1,0 +1,14 @@
+version: 1.0.0
+permalink: pretty
+
+exclude:
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - package.json
+  - .editorconfig
+  - .gitignore
+  - tmp
+  - node_modules
+  - css
+  - js

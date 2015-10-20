@@ -1,0 +1,31 @@
+# humanstxt.org
+
+# TEAM
+
+Designer & Developer: Thomas J Bradley <hey@thomasjbradley.ca>
+Site: http://thomasjbradley.ca
+GitHub: https://github.com/thomasjbradley
+Twitter: @thomasjbradley
+Location: Ottawa, Canada
+
+---
+
+# THANKS
+
+[Paper icon](http://thenounproject.com/term/paper/29062/) copyright Yazmin Alanis.
+
+---
+
+# TECHNOLOGY
+
+## Software
+
+- Sublime Text 3 (with Vintageous)
+- Git + GitHub
+- Gulp.js
+- PostCSS
+- Uglify
+
+## Hosting
+
+- GitHub <http://github.com>
