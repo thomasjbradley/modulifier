@@ -10,6 +10,10 @@
   background-color: rgba(0,0,0,0.3);
 }
 
+.help-dialog[data-state="visible"] {
+  display: block;
+}
+
 .help {
   left: 50%;
   margin-left: -17rem;
@@ -23,39 +27,41 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-.help__close,
-.help__open {
+.help__close {
   height: 32px;
   position: absolute;
+  right: -16px;
+  top: -16px;
   width: 32px;
 
+  background-color: #999;
+  border: 3px solid #fff;
   border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
   cursor: pointer;
 
   color: #fff;
+  line-height: 0.7;
   font-weight: bold;
   text-align: center;
 }
 
-.help__open {
-  top: 0.75rem;
-
-  background-color: #999;
-  border: 1px solid #666;
-
-  color: #ddd;
-  line-height: 0.9;
+.help__close:hover {
+  background-color: #000;
 }
 
-.help__close {
-  right: -16px;
-  top: -16px;
+.help__open {
+  height: 32px;
+  overflow: hidden;
+  padding: 0;
+  width: 32px;
 
   background-color: #999;
-  border: 3px solid #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  border: 1px solid #666;
+  cursor: pointer;
 
-  line-height: 0.7;
+  color: #ddd;
 }
 
 .help__open:hover {
@@ -63,10 +69,6 @@
   border-color: var(--color-help-purple-dark);
 
   color: #fff;
-}
-
-.help__close:hover {
-  background-color: #000;
 }
 
 .help__close:focus,
@@ -85,36 +87,6 @@
 
   background-size: auto 90%;
   background-repeat: no-repeat;
-}
-
-.btn-tutorials,
-.btn-tutorials:link,
-.btn-tutorials:visited {
-  padding-left: 2.8em;
-
-  background-image: url("../img/i-paper.svg");
-  background-position: 0.4em center;
-}
-
-.btn-tutorials:hover,
-.btn-tutorials:focus,
-.btn-tutorials:active {
-  background-image: embedurl("../img/i-paper-white.svg");
-}
-
-.btn-videos,
-.btn-videos:link,
-.btn-videos:visited {
-  padding-left: 3.6em;
-
-  background-image: embedurl("../img/i-youtube.svg");
-  background-position: 0.8em center;
-}
-
-.btn-videos:hover,
-.btn-videos:focus,
-.btn-videos:active {
-  background-image: embedurl("../img/i-youtube-white.svg");
 }
 
 .left {

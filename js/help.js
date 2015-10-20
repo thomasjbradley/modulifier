@@ -4,15 +4,15 @@
   var $help = $('.help-dialog');
 
   $('.help__close').addEventListener('click', function () {
-    // $help.fadeOut(200);
+    $help.setAttribute('data-state', 'hidden');
   });
 
   $('.help__open').addEventListener('click', function () {
-    // $help.fadeIn(200);
+    $help.setAttribute('data-state', 'visible');
   });
 
   $help.addEventListener('click', function () {
-    // $help.fadeOut(200);
+    $help.setAttribute('data-state', 'hidden');
   });
 
   $('.help').addEventListener('click', function (e) {

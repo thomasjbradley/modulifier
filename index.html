@@ -12,71 +12,17 @@
 </head>
 <body>
 
-<h1 class="common-bar__title kilo">Modulifier<span class="common-bar__title__subhead">—a common pattern CSS code generating tool</span></h1>
+{% include common-bar.html %}
 
-<main class="main" role="main">
+<main class="main island-1-2" role="main">
   {% include interface-form.html %}
 </main>
 
-<div class="output has-options">
-  <textarea id="output" spellcheck="false"></textarea>
+<div class="output">
+  <textarea id="output" class="gutter-1-2" spellcheck="false"></textarea>
 </div>
 
-<aside class="common-bar" role="complementary">
-  <button class="help__open" title="Help">?<span class="visually-hidden"> Help</span></button>
-
-  <ul class="list-group common-bar__social">
-    <li class="list-group-item list-group-item-inline">
-      <a class="icon i--28 i--github ir" href="https://github.com/thomasjbradley/modulifier" title="GitHub" rel="external">GitHub</a>
-    </li>
-    <li class="list-group-item list-group-item-inline">
-      <a class="icon i--28 i--22w i--thomasjbradley ir" href="http://thomasjbradley.ca" title="Website" rel="external me">Website</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="help-dialog" data-state="open">
-  <aside class="help" role="complementary">
-    <button class="help__close">×</button>
-
-    <h2 class="mega help-color">Help &amp; Tutorials</h2>
-    <p class="micro"><i>Modulifier</i> generates a series of code for common CSS patterns. Simplifying the process of making &amp; maintaining a responsive websites.</p>
-
-    <div class="help__buttons push">
-      <a class="btn btn-icon btn-videos help-btn" href="http://learn-the-web.algonquindesign.ca/topics/modules/" rel="external">Tutorials &amp; videos</a>
-      <a class="btn btn-icon btn-tutorials help-btn" href="http://learn-the-web.algonquindesign.ca/topics/modulifier-cheat-sheet/" rel="external">Cheat sheet</a>
-    </div>
-
-    <hr>
-
-    <h3 class="micro push-0">Companion apps</h3>
-
-    <ul class="micro list-group clearfix">
-      <li class="left"><a class="help-link" href="http://gridifer.web-dev.tools" rel="external"><strong>Gridifier »</strong></a></li>
-      <li class="right"><a class="help-link" href="http://typografier.web-dev.tools" rel="external"><strong>Typografier »</strong></a></li>
-    </ul>
-
-    <hr>
-
-    <div class="clearfix">
-      <div class="left">
-        <h3 class="micro push-0">Similar Apps</h3>
-        <ul class="micro list-group push-0">
-        </ul>
-      </div>
-
-      <div class="right">
-        <h3 class="micro push-0">Inspiration</h3>
-        <ul class="micro list-group push-0">
-          <li><a class="help-link" href="http://purecss.io/" rel="external">YUI Pure</a></li>
-          <li><a class="help-link" href="http://getbootstrap.com/" rel="external">Bootstrap</a></li>
-          <li><a class="help-link" href="http://foundation.zurb.com/" rel="external">Foundation</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </aside>
-</div>
+{% include help-dialog.html %}
 
 {% include templates.html %}
 

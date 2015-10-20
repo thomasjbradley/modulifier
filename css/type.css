@@ -131,7 +131,7 @@ h5, .mega {
   line-height: 1.3333;
 }
 
-h6, .kilo, input {
+h6, .kilo, input, textarea {
   font-size: 1.0000rem;
   line-height: 1.5000;
 }

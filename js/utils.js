@@ -1,4 +1,4 @@
 var
-  $ = document.querySelector,
-  $$ = document.querySelectorAll
+  $ = function (sel) { return document.querySelector(sel); },
+  $$ = function (sel) { return document.querySelectorAll(sel); }
 ;

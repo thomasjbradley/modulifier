@@ -4,11 +4,12 @@ permalink: pretty
 exclude:
   - README.md
   - LICENSE
+  - UNLICENSE
   - gulpfile.js
   - package.json
   - .editorconfig
-  - .gitignore
+  - .git*
   - tmp
   - node_modules
-  - css
-  - js
+  - css/*.css
+  - js/*.js

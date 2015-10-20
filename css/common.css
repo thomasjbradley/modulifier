@@ -11,6 +11,140 @@
   --color-interface-grey-dark: #ccc;
 
   --color-help-purple: #8b3bab;
-  --color-help-light: #d1b1dd;
-  --color-help-dark: #461e55;
+  --color-help-purple-light: #d1b1dd;
+  --color-help-purple-dark: #461e55;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block,
+.ib {
+  display: inline-block;
+}
+
+.valign-bottom {
+  vertical-align: middle;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.static {
+  position: static;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
+}
+
+.pin-top-right {
+  top: 0;
+  right: 0;
+}
+
+.pin-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.width-half,
+.w-1-2 {
+  width: 50%;
+}
+
+.width-full,
+.w-100 {
+  width: 100%;
+}
+
+.ir {
+  overflow: hidden;
+  direction: ltr;
+  text-align: left;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  clip: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
 }

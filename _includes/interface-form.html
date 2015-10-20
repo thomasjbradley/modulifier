@@ -1,14 +1,69 @@
 <form id="controls">
   <table>
+
    <thead>
       <tr>
-        <th scope="col" id="label-include" colspan="3">Include?</th>
+        <th scope="col" id="label-include" colspan="1"><span class="block visually-hidden">Include?</span></th>
         <th scope="col" id="label-module" colspan="7">Module</th>
-        <th scope="col" id="label-description" colspan="14">Description</th>
+        <th scope="col" id="label-description" colspan="16">Description</th>
       </tr>
     </thead>
-    <tbody id="breakpoints">
-
+    <tbody>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="responsive" checked></td>
+        <td colspan="7"><label for="responsive">Responsive setup</label></td>
+        <td colspan="16"><small class="desc">@viewport, HTML5 elements, border-box, body margin: 0</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="images" checked></td>
+        <td colspan="7"><label for="images">Image helpers</label></td>
+        <td colspan="16"><small class="desc">Responsive images, image replacement, SVG helpers</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="list-group" checked></td>
+        <td colspan="7"><label for="list-group">List group</label></td>
+        <td colspan="16"><small class="desc">Vertical &amp; horizontal lists without bullets</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="embed" checked></td>
+        <td colspan="7"><label for="embed">Embed containers</label></td>
+        <td colspan="16"><small class="desc">Responsive containers for embedding images and videos</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="media-object"></td>
+        <td colspan="7"><label for="media-object">Media objects</label></td>
+        <td colspan="16"><small class="desc">A nestable image-beside-text component</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="icons"></td>
+        <td colspan="7"><label for="icons">Icons</label></td>
+        <td colspan="16"><small class="desc">Icon helper classes, labels, sizes &amp; SVG use support</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="hidden"></td>
+        <td colspan="7"><label for="hidden">Hidden</label></td>
+        <td colspan="16"><small class="desc">Hiding elements, hidden but focusable &amp; invisible</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="positioning"></td>
+        <td colspan="7"><label for="positioning">Positioning</label></td>
+        <td colspan="16"><small class="desc">Float/clear, block/inline, fixed/relative, common widths</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="buttons"></td>
+        <td colspan="7"><label for="buttons">Basic buttons</label></td>
+        <td colspan="16"><small class="desc">Three basic button styles with hover states</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="accessibility" checked></td>
+        <td colspan="7"><label for="accessibility">Accessibility</label></td>
+        <td colspan="16"><small class="desc">Focus styles, skip links</small></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="text-right gutter-1-4"><input type="checkbox" id="print" checked></td>
+        <td colspan="7"><label for="print">Print styles</label></td>
+        <td colspan="16"><small class="desc">Basic print styles, .no-print &amp; link URL printing</small></td>
+      </tr>
     </tbody>
   </table>
 </form>

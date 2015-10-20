@@ -1,6 +1,9 @@
+@import 'normalize';
+
 @import 'common';
-@import 'list-group';
+@import 'grid';
 @import 'type';
+@import 'list-group';
 @import 'icons';
 
 @import 'app';

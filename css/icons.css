@@ -4,7 +4,11 @@
   background: transparent none no-repeat center center;
   background-size: contain;
 
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+.icon__label {
+  vertical-align: middle;
 }
 
 .i--28 {
@@ -12,19 +16,7 @@
   width: 28px;
 }
 
-.i--22w {
-  width: 22px;
-}
-
-.i--thomasjbradley {
-  background-image: url("../img/i-thomasjbradley.svg");
-  background-size: auto 100%;
-}
-
-.i--github {
-  background-image: url("../img/i-github.svg");
-}
-
-.i--twitter {
-  background-image: url("../img/i-twitter.svg");
+.i--32 {
+  height: 32px;
+  width: 32px;
 }

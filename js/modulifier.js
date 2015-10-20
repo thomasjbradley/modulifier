@@ -6,7 +6,7 @@
     hashBits,
     defaults = [],
 
-    $controls = $('controls'),
+    $controls = $('#controls'),
 
     view = function view (name, vals) {
       return prepareTemplate(name, vals);

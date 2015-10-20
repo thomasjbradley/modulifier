@@ -1,182 +1,162 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
+  box-sizing: border-box;
   height: 100%;
   position: relative;
+
   background-color: #fff;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  font-family: var(--font-brand);
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   bottom: 0;
+  margin: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
 }
+
 .main {
   bottom: 3.5rem;
   left: 0;
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
-  padding: 1em;
   top: 0;
   width: 62.5%;
 }
+
 .output {
   bottom: 3.5rem;
   position: absolute;
   right: 0;
   top: 0;
   width: 37.5%;
+
   background-color: var(--color-interface-grey);
   border-left: 1px solid var(--color-interface-grey-dark);
 }
-.has-options {
-  bottom: 7rem;
-}
-.extra-options {
-  bottom: 3.5rem;
-  height: 3.5rem;
-  padding: 1em;
-  position: fixed;
-  right: 0;
-  width: 37.5%;
-  background-color: var(--color-interface-grey);
-  border-left: 1px solid var(--color-interface-grey-dark);
-  border-top: 1px solid var(--color-interface-grey-dark);
-  color: #666;
-}
-.options-title {
-  display: inline-block;
-  margin-right: 1.5rem;
-}
+
 textarea {
-  padding: 0 1em;
   height: 100%;
   width: 100%;
+
   background-color: transparent;
   border: 0;
   resize: none;
-  font: normal 100%/1.5 var(--font-brand);
+
+  font-family: var(--font-brand);
 }
+
 textarea:focus {
   outline: 2px solid #000;
 }
+
+hr {
+  border-color: var(--color-interface-grey-dark);
+}
+
 table {
-  width: 100%;
-  border-collapse: collapse;
   table-layout: fixed;
 }
-th,
-td {
-  padding: 0.75rem 0;
-  vertical-align: middle;
-  text-align: left;
+
+th, td {
+  border-color: var(--color-interface-grey-dark);
 }
-th {
-  padding-top: 0;
-}
-tr {
-  border-bottom: 1px solid var(--color-interface-grey-dark);
-}
+
 label {
+  cursor: pointer;
   vertical-align: middle;
 }
+
 input {
-  padding: 0.25em;
   vertical-align: middle;
-  width: 70%;
+
   border: 1px solid var(--color-interface-grey-dark);
-  font: normal 100%/1.5 var(--font-brand);
+
+  font-family: var(--font-brand);
 }
+
 input:focus {
   outline: 2px solid #000;
 }
+
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
+
   cursor: pointer;
 }
+
 select {
   width: 85%;
 }
+
 a,
 a:link,
 a:visited {
   border-bottom: 0.1em solid var(--color-blue-light);
-  transition: border-color 200ms linear;
+
   color: var(--color-blue);
   text-decoration: none;
 }
+
 a:hover,
 a:focus,
 a:active {
   border-bottom-color: var(--color-blue);
 }
+
+.desc {
+  color: #666;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   padding: 0.5em 1em;
+
   background-color: var(--color-interface-grey);
   border: 1px solid var(--color-interface-grey-dark);
   border-radius: 6px;
   cursor: pointer;
-  transition: border-color 70ms linear, background-color 70ms linear, color 70ms linear;
+
   color: #000;
   font: bold 100%/1.5 var(--font-brand);
   text-decoration: none;
 }
+
 .btn::before {
   color: #000;
 }
+
 .btn:hover {
   background-color: var(--color-blue);
   border-color: var(--color-navy);
+
   color: #fff;
 }
+
 .btn:focus {
   outline: 2px solid #000;
 }
-.btn-fatal:hover {
-  background-color: var(--color-red);
-  border-color: var(--color-maroon);
-}
+
 .btn:hover::before {
   color: #fff;
-}
-.btn-remove-breakpoint {
-  display: none;
-  height: 2em;
-  padding: 0;
-  position: relative;
-  width: 2em;
-  border-radius: 1em;
-}
-.btn-remove-breakpoint::before {
-  content: "×";
-  left: 50%;
-  height: 1em;
-  margin: -0.5em 0 0 -0.5em;
-  position: absolute;
-  top: 50%;
-  width: 1em;
-  line-height: 1em;
-  text-align: center;
-}
-.btn-left {
-  float: left;
-}
-.btn-right {
-  float: right;
-}
-.breakpoint:last-child .btn-remove-breakpoint {
-  display: inline-block;
-}
-.remove-breakpoint-wrap {
-  text-align: right;
-}
-.infinite {
-  position: relative;
-  top: 0.1em;
-  font-size: 1.5rem;
-  line-height: 1;
 }
