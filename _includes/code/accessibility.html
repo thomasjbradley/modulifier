@@ -4,7 +4,8 @@ a:hover, a:active {
   outline: none;
 }
 
-a:focus {
+a:focus, [tabindex="0"]:focus,
+input:focus, textarea:focus, button:focus {
   outline: 3px solid #000;
 }
 
@@ -20,7 +21,7 @@ a:focus {
   top: -3em;
   background-color: #000;
   color: #fff;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: bold;
   text-decoration: none;
 }
