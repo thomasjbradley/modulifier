@@ -1,58 +1,62 @@
 {% raw %}
 <script type="text/template" data-template="css-print">
-.no-print {
-  display: none;
-  visibility: hidden;
-}
+@media print {
 
-/*
-  (c) HTML5 Boilerplate || MIT License
-      https://html5boilerplate.com/
-*/
+  .no-print {
+    display: none;
+    visibility: hidden;
+  }
 
-*, *:before, *:after, *:first-letter, *:first-line {
-  background: transparent !important;
-  color: #000 !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
-}
+  /*
+    (c) HTML5 Boilerplate || MIT License
+        https://html5boilerplate.com/
+  */
 
-a, a:visited {
-  text-decoration: underline;
-}
+  *, *:before, *:after, *:first-letter, *:first-line {
+    background: none transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-a[href]:after {
-  content: " (" attr(href) ")";
-}
+  a, a:visited {
+    text-decoration: underline;
+  }
 
-abbr[title]:after {
-  content: " (" attr(title) ")";
-}
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-a[href^="#"]:after,
-a[href^="javascript:"]:after {
-  content: "";
-}
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-pre, blockquote {
-  page-break-inside: avoid;
-}
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-thead {
-  display: table-header-group;
-}
+  pre, blockquote {
+    page-break-inside: avoid;
+  }
 
-tr, img {
-  page-break-inside: avoid;
-}
+  thead {
+    display: table-header-group;
+  }
 
-p, h1, h2, h3, h4, h5, h6 {
-  orphans: 3;
-  widows: 3;
-}
+  tr, img {
+    page-break-inside: avoid;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  page-break-after: avoid;
+  p, h1, h2, h3, h4, h5, h6 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
 }
 </script>
 {% endraw %}
