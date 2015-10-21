@@ -7,8 +7,9 @@
   <title>Modulifier—a common pattern CSS code generating tool</title>
   <meta name="description" content="Modulifier is a tool that generates CSS for a bunch of common patterns and repeated code on websites.">
   <meta name="viewport" content="width=1200">
-  <link href="/modulifier.min.css?v={{site.version}}" rel="stylesheet">
-  <link href="/favicon.ico" rel="shortcut icon">
+  <style>
+    {% include modulifier.min.css %}
+  </style>
 </head>
 <body>
 
@@ -25,7 +26,9 @@
 {% include help-dialog.html %}
 {% include templates.html %}
 
-<script src="/modulifier.min.js?v={{site.version}}"></script>
+<script>
+  {% include modulifier.min.js %}
+</script>
 
 </body>
 </html>

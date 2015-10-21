@@ -20,8 +20,8 @@ var prepareTemplate = (function (doc) {
       for (key in searchAndReplaces) {
         if (searchAndReplaces.hasOwnProperty(key)) {
           val = searchAndReplaces[key];
-          tagOpen = '{{' + key + '}}\n?';
-          tagClose = '{{/' + key + '}}\n?';
+          tagOpen = '>>' + key + '<<\n?';
+          tagClose = '>>/' + key + '<<\n?';
           tagCombined = tagOpen + '(.|\n|\r)+?' + tagClose + '\n?';
 
           if (val === true || val === false) {
