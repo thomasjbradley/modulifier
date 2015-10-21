@@ -1,0 +1,32 @@
+{% raw %}
+<script type="text/template" data-template="css-hidden">
+[hidden], .hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  clip: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+</script>
+{% endraw %}

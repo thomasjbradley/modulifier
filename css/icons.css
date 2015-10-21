@@ -7,10 +7,6 @@
   vertical-align: middle;
 }
 
-.icon__label {
-  vertical-align: middle;
-}
-
 .i--28 {
   height: 28px;
   width: 28px;
@@ -19,4 +15,8 @@
 .i--32 {
   height: 32px;
   width: 32px;
+}
+
+.icon-label {
+  vertical-align: middle;
 }

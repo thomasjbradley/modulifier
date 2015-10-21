@@ -4,12 +4,12 @@ var prepareTemplate = (function (doc) {
   var templateCache = {};
 
   return function prepareTemplate (template, searchAndReplaces) {
-    var temp, val, tagOpen, tagClose, tagCombined;
+    var temp, val, key, tagOpen, tagClose, tagCombined, output;
 
     if (templateCache[template]) {
       output = templateCache[template];
     } else {
-      temp = doc.querySelector('[data-template="' + template + '"]')
+      temp = doc.querySelector('[data-template="' + template + '"]');
 
       if (!temp) throw 'Template doesn’t exist: ' + template;
 
