@@ -1,9 +1,19 @@
 <script type="text/template" data-template="css-print">
+.print-only {
+  display: none;
+  visibility: hidden;
+}
+
 @media print {
 
   .no-print {
     display: none;
     visibility: hidden;
+  }
+
+  .print-only {
+    display: block;
+    visibility: visible;
   }
 
   /*
