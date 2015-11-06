@@ -61,6 +61,7 @@ textarea {
   resize: none;
 
   font-family: var(--font-brand);
+  white-space: pre;
 }
 
 textarea:focus {
