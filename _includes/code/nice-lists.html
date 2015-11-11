@@ -1,0 +1,27 @@
+<script type="text/template" data-template="css-nice-lists">
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "·";
+  float: left;
+  margin-left: -1.6em;
+  width: 1.3em;
+  text-align: right;
+}
+
+ol {
+  counter-reset: ol-simple-numbers 20;
+  list-style-type: none;
+}
+
+ol li::before {
+  float: left;
+  margin-left: -1.6em;
+  width: 1.3em;
+  counter-increment: ol-simple-numbers;
+  content: counter(ol-simple-numbers);
+  text-align: right;
+}
+</script>
