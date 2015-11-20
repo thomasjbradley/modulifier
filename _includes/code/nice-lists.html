@@ -24,4 +24,9 @@ ol li::before {
   content: counter(ol-simple-numbers);
   text-align: right;
 }
+
+.list-group > li::before,
+.list-group-inline > li::before {
+  content: none;
+}
 </script>
