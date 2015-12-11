@@ -18,6 +18,10 @@ a:focus, [tabindex="0"]:focus {
   list-style-type: none;
 }
 
+.skip-links > li::before {
+  content: none; /* Remove the bullets if nice lists is selected */
+}
+
 .skip-links a {
   padding: 0.5em 0.75em;
   position: absolute;
