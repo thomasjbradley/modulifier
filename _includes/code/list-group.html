@@ -1,5 +1,5 @@
 <script type="text/template" data-template="css-list-group">
-.list-group {
+.list-group, .list-group-inline, .list-group--inline {
   padding-left: 0;
   list-style-type: none;
 }
@@ -8,26 +8,32 @@
   margin-left: 0;
 }
 
+.list-group-inline::before,
+.list-group-inline::after,
 .list-group--inline::before,
 .list-group--inline::after {
   content: "";
   display: table;
 }
 
+.list-group-inline::after,
 .list-group--inline::after {
   clear: both;
 }
 
+.list-group-inline > li,
 .list-group--inline > li {
   display: inline-block;
 }
 
+.list-group-inline > dt,
 .list-group--inline > dt {
   clear: left;
   float: left;
   width: 11em;
 }
 
+.list-group-inline > dd,
 .list-group--inline > dd {
   float: left;
   min-width: 12em;
