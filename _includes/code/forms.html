@@ -1,5 +1,6 @@
 <script type="text/template" data-template="css-forms">
-label, .label-block {
+label,
+.label-block {
   display: block;
   cursor: pointer;
 }
@@ -15,13 +16,18 @@ input[type="radio"] + label,
  *     https://necolas.github.io/normalize.css/
  */
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   font: inherit;
   margin: 0;
 }
 
-button {
+button,
+input {
   overflow: visible;
 }
 
@@ -75,6 +81,10 @@ fieldset {
 legend {
   border: 0;
   padding: 0;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
 }
 
 textarea {
@@ -83,6 +93,16 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
 }
 
 /* End Normalize.css code */
