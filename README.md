@@ -1,6 +1,6 @@
 # Modulifier
 
-[Modulifier](http://moduilfier.web-dev.tools) is a tool that generates CSS for a bunch of common patterns and repeated code on websites.
+[Modulifier](https://moduilfier.web-dev.tools) is a tool that generates CSS for a bunch of common patterns and repeated code on websites.
 
 *I use it on just about every website I create.* For me it’s an alternative to monolithic frameworks like Bootstrap and Foundation.
 
@@ -12,8 +12,8 @@ This modular system is taught as part of the [Algonquin College Graphic Design](
 
 This tool is introduced to the students after they learn the “long, hard, stupid way.”
 
-- [**☛ Modules tutorials & videos**](http://learn-the-web.algonquindesign.ca/topics/modules/)
-- [**☛ Modulifier cheat sheet**](http://learn-the-web.algonquindesign.ca/topics/moduilfier-cheat-sheet/)
+- [**☛ Modules tutorials & videos**](https://learn-the-web.algonquindesign.ca/topics/modules/)
+- [**☛ Modulifier cheat sheet**](https://learn-the-web.algonquindesign.ca/topics/moduilfier-cheat-sheet/)
 
 ---
 
