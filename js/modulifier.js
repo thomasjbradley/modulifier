@@ -7,6 +7,13 @@
   var $controls = $('#controls');
   var $allChecks = $controls.querySelectorAll('input[type="checkbox"]');
   var $output = $('#output');
+  var $defaults = [];
+
+  var findDefaults = function () {
+    [].forEach.call($allChecks, function (check) {
+      if (check.checked) $defaults.push(check);
+    });
+  };
 
   var view = function view (name, vals) {
     return prepareTemplate(name, vals);
@@ -58,6 +65,27 @@
     });
   }
 
+  $('#select-all').addEventListener('click', function (e) {
+    [].forEach.call($allChecks, function (check) {
+      check.checked = true;
+    });
+
+    buildOutput(findModuleCode(getCheckedModules()));
+  });
+
+  $('#select-defaults').addEventListener('click', function (e) {
+    [].forEach.call($allChecks, function (check) {
+      check.checked = false;
+    });
+
+    [].forEach.call($defaults, function (check) {
+      check.checked = true;
+    });
+
+    buildOutput(findModuleCode(getCheckedModules()));
+  });
+
+  findDefaults();
   buildOutput(findModuleCode(getCheckedModules()));
 
 }($, $$));
