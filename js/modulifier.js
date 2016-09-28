@@ -19,7 +19,7 @@
   var findModuleCode = function (moduleChecks) {
     var output = [], hash = [];
 
-    Array.prototype.forEach.call(moduleChecks, function (elem) {
+    [].forEach.call(moduleChecks, function (elem) {
       output.push(view(elem.value).trim());
       hash.push(elem.value.replace('css-', ''));
     });
@@ -47,7 +47,7 @@
   });
 
   if (hash) {
-    Array.prototype.forEach.call($allChecks, function (elem) {
+    [].forEach.call($allChecks, function (elem) {
       elem.checked = false;
     });
 
