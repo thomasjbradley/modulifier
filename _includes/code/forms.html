@@ -159,7 +159,11 @@ select {
   display: block;
   width: 100%;
 
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='36' viewBox='0 0 50 42' fill='%23999'%3E%3Cpolygon points='0,0 50,0 25,42' /%3E%3C/svg%3E") no-repeat calc(100% - .4em) center / 16px auto #fff;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='36' viewBox='0 0 50 42' fill='%23999'%3E%3Cpolygon points='0,0 50,0 25,42' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - .4em) center;
+  background-size: 16px auto;
+  background-color: #fff;
   border: 2px solid #e2e2e2;
   border-radius: 0;
 }
