@@ -46,6 +46,8 @@
     window.location.hash = output.hash.join(';');
   };
 
+  findDefaults();
+
   'keyup change submit'.split(' ').forEach(function (singleEvent) {
     $controls.addEventListener(singleEvent, function (e) {
       e.preventDefault();
@@ -85,7 +87,6 @@
     buildOutput(findModuleCode(getCheckedModules()));
   });
 
-  findDefaults();
   buildOutput(findModuleCode(getCheckedModules()));
 
 }($, $$));
