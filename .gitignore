@@ -2,3 +2,5 @@ node_modules
 _site
 tmp
 .jekyll-metadata
+*.min.css
+*.min.js
