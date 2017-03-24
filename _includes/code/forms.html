@@ -333,5 +333,13 @@ input[type="range"]:active::-ms-thumb {
   background-color: #000;
 }
 
+input[type="checkbox"].hide-custom-input + label::before,
+input[type="checkbox"] + label.hide-custom-input::before,
+input[type="radio"].hide-custom-input + label::before,
+input[type="radio"] + label.hide-custom-input::before {
+  content: none;
+  display: none;
+}
+
 /* stylelint-enable */
 </script>
