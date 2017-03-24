@@ -1,9 +1,4 @@
 <script type="text/template" data-template="css-positioning">
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .clearfix::after {
   content: " ";
   display: block;
@@ -28,6 +23,14 @@
   margin-right: auto;
 }
 
+.no-auto-margins,
+.not-centered {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.center-content,
+.center-content-vertical,
 .center-contents,
 .center-contents-vertical {
   display: -webkit-flex;
@@ -47,6 +50,7 @@
   flex-flow: column wrap;
 }
 
+.center-content-horizontal,
 .center-contents-horizontal {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -97,6 +101,7 @@
   position: relative;
 }
 
+[class*=".pin-"],
 .absolute {
   position: absolute;
 }
@@ -117,45 +122,73 @@
   z-index: 3;
 }
 
-.pin-top-left, .pin-tl {
+.zindex-1000 {
+  z-index: 1000;
+}
+
+.pin-top-left,
+.pin-left-top,
+.pin-tl
+.pin-lt {
   top: 0;
   left: 0;
 }
 
-.pin-top-right, .pin-tr {
+.pin-top-right,
+.pin-right-top,
+.pin-tr,
+.pin-rt {
   top: 0;
   right: 0;
 }
 
-.pin-bottom-left, .pin-bl {
+.pin-bottom-left,
+.pin-left-bottom,
+.pin-bl,
+.pin-lb {
   bottom: 0;
   left: 0;
 }
 
-.pin-bottom-right, .pin-br {
+.pin-bottom-right,
+.pin-right-bottom,
+.pin-br,
+.pin-rb {
   bottom: 0;
   right: 0;
 }
 
-.pin-top-center, .pin-tc {
+.pin-top-center,
+.pin-center-top,
+.pin-tc,
+.pin-ct {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
 }
 
-.pin-bottom-center, .pin-bc {
+.pin-bottom-center,
+.pin-center-bottom,
+.pin-bc,
+.pin-cb {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.pin-center-left, .pin-cl {
+.pin-center-left,
+.pin-left-center,
+.pin-cl,
+.pin-lc {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.pin-center-right, .pin-cr {
+.pin-center-right,
+.pin-right-center,
+.pin-cr,
+.pin-rc {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
