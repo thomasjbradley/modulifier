@@ -27,9 +27,9 @@ select {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -45,21 +45,21 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   opacity: 0;
   position: absolute;
   height: 1px;
   width: 1px;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -105,26 +105,26 @@ label,
   cursor: pointer;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label,
+[type="checkbox"] + label,
+[type="radio"] + label,
 .label-inline {
   display: inline-block;
 }
 
 input:not([type]),
-input[type="text"],
-input[type="number"],
-input[type="search"],
-input[type="url"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="date"],
-input[type="time"],
-input[type="range"],
+[type="text"],
+[type="number"],
+[type="search"],
+[type="url"],
+[type="email"],
+[type="password"],
+[type="tel"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="date"],
+[type="time"],
+[type="range"],
 select,
 textarea {
   -moz-appearance: none;
@@ -154,7 +154,7 @@ textarea {
   overflow: auto;
 }
 
-input[type="color"] {
+[type="color"] {
   display: inline-block;
   width: 2em;
 }
@@ -172,7 +172,7 @@ select {
   border-radius: 0;
 }
 
-input[type="checkbox"] + label::before {
+[type="checkbox"] + label::before {
   content: " ";
   display: inline-block;
   height: 1.8em;
@@ -189,16 +189,16 @@ input[type="checkbox"] + label::before {
   line-height: inherit;
 }
 
-input[type="checkbox"]:checked + label::before {
+[type="checkbox"]:checked + label::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='none' stroke='%23000' stroke-miterlimit='10' stroke-width='50' d='M49.9 130.1l50.8 50.7L206.1 75.2'/%3E%3C/svg%3E");
 }
 
-input[type="checkbox"]:focus + label::before {
+[type="checkbox"]:focus + label::before {
   outline: 3px solid #000;
   z-index: 1000;
 }
 
-input[type="radio"] + label::before {
+[type="radio"] + label::before {
   content: " ";
   display: inline-block;
   height: 1.8em;
@@ -216,22 +216,22 @@ input[type="radio"] + label::before {
   line-height: inherit;
 }
 
-input[type="radio"]:checked + label::before {
+[type="radio"]:checked + label::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='70.4'/%3E%3C/svg%3E");
 }
 
-input[type="radio"]:focus + label::before,
-input[type="radio"] + label:focus::before {
+[type="radio"]:focus + label::before,
+[type="radio"] + label:focus::before {
   box-shadow: 0 0 0 3px #000;
   z-index: 1000;
 }
 
-input[type="range"] {
+[type="range"] {
   border: 0;
   background-color: #fff;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+[type="range"]::-webkit-slider-runnable-track {
   height: 6px;
 
   -webkit-appearance: none;
@@ -241,11 +241,11 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 3px;
 }
 
-input[type="range"]:active::-webkit-slider-runnable-track {
+[type="range"]:active::-webkit-slider-runnable-track {
   background-color: #ccc;
 }
 
-input[type="range"]::-moz-range-track {
+[type="range"]::-moz-range-track {
   height: 6px;
 
   -moz-appearance: none;
@@ -255,11 +255,11 @@ input[type="range"]::-moz-range-track {
   border-radius: 3px;
 }
 
-input[type="range"]:active::-moz-range-track {
+[type="range"]:active::-moz-range-track {
   background-color: #ccc;
 }
 
-input[type="range"]::-ms-track {
+[type="range"]::-ms-track {
   height: 6px;
 
   -ms-appearance: none;
@@ -269,11 +269,11 @@ input[type="range"]::-ms-track {
   border-radius: 3px;
 }
 
-input[type="range"]:active::-ms-track {
+[type="range"]:active::-ms-track {
   background-color: #ccc;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+[type="range"]::-webkit-slider-thumb {
   margin-top: -4px;
   height: 16px;
   width: 16px;
@@ -285,15 +285,15 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
 }
 
-input[type="range"]:hover::-webkit-slider-thumb {
+[type="range"]:hover::-webkit-slider-thumb {
   background-color: #000;
 }
 
-input[type="range"]:active::-webkit-slider-thumb {
+[type="range"]:active::-webkit-slider-thumb {
   background-color: #000;
 }
 
-input[type="range"]::-moz-range-thumb {
+[type="range"]::-moz-range-thumb {
   margin-top: -4px;
   height: 16px;
   width: 16px;
@@ -305,15 +305,15 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
 }
 
-input[type="range"]:hover::-moz-range-thumb {
+[type="range"]:hover::-moz-range-thumb {
   background-color: #000;
 }
 
-input[type="range"]:active::-moz-range-thumb {
+[type="range"]:active::-moz-range-thumb {
   background-color: #000;
 }
 
-input[type="range"]::-ms-thumb {
+[type="range"]::-ms-thumb {
   margin-top: -4px;
   height: 16px;
   width: 16px;
@@ -325,18 +325,18 @@ input[type="range"]::-ms-thumb {
   border-radius: 50%;
 }
 
-input[type="range"]:hover::-ms-thumb {
+[type="range"]:hover::-ms-thumb {
   background-color: #000;
 }
 
-input[type="range"]:active::-ms-thumb {
+[type="range"]:active::-ms-thumb {
   background-color: #000;
 }
 
-input[type="checkbox"].hide-custom-input + label::before,
-input[type="checkbox"] + label.hide-custom-input::before,
-input[type="radio"].hide-custom-input + label::before,
-input[type="radio"] + label.hide-custom-input::before {
+[type="checkbox"].hide-custom-input + label::before,
+[type="checkbox"] + .hide-custom-input::before,
+[type="radio"].hide-custom-input + label::before,
+[type="radio"] + .hide-custom-input::before {
   content: none;
   display: none;
 }
