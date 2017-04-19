@@ -25,8 +25,8 @@
 
 .no-auto-margins,
 .not-centered {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .center-content,
@@ -45,6 +45,21 @@
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-start,
+.center-content-vertical-start,
+.center-contents-start,
+.center-contents-vertical-start {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-direction: column wrap;
   -ms-flex-direction: column wrap;
   flex-flow: column wrap;
