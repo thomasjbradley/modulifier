@@ -6,15 +6,19 @@
 
 @media print {
 
+  /* stylelint-disable declaration-no-important */
+
   .no-print {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
   }
 
   .print-only {
-    display: block;
-    visibility: visible;
+    display: block !important;
+    visibility: visible !important;
   }
+
+  /* stylelint-enable */
 
   /*
    * (c) HTML5 Boilerplate || MIT License
@@ -45,7 +49,8 @@
   }
 
   a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  a[href^="javascript:"]::after,
+  a.href-no-print::after {
     content: "";
   }
 
