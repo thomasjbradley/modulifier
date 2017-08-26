@@ -13,12 +13,24 @@
     visibility: hidden !important;
   }
 
-  .print-only {
+  .print-only,
+  .force-print {
     display: block !important;
     visibility: visible !important;
   }
 
   /* stylelint-enable */
+
+  .visually-hidden.force-print {
+    height: auto;
+    margin: initial;
+    overflow: visible;
+    padding: initial;
+    position: static;
+    width: auto;
+    border: 0;
+    clip: unset;
+  }
 
   /*
    * (c) HTML5 Boilerplate || MIT License
