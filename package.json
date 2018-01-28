@@ -16,7 +16,7 @@
     "server": "jekyll serve --incremental",
     "build-watch": "gulp watch",
     "build": "gulp build",
-    "deploy": "rsync --recursive --checksum --delete --delete-excluded --verbose --compress --exclude-from=rsync-exclude.txt ./_site/ keycdn:zones/modulifier/",
+    "deploy": "rsync --recursive --checksum --delete --delete-excluded --verbose --compress --exclude-from=rsync-exclude.txt ./_site/ keycdn:modulifier/",
     "build-n-deploy": "npm run build && jekyll build && npm run deploy"
   }
 }
