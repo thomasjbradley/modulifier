@@ -1,16 +1,20 @@
 <script type="text/template" data-template="css-positioning">
-.clearfix::after {
-  content: " ";
-  display: block;
-  clear: both;
+.flex-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.left {
-  float: left;
+.flex-justify {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
 }
 
-.right {
-  float: right;
+.flex-align-center {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .center-text,
@@ -84,6 +88,20 @@
   -webkit-flex-direction: row wrap;
   -ms-flex-direction: row wrap;
   flex-flow: row wrap;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .inline {
